@@ -1,0 +1,36 @@
+body {
+  background-color: #F0FFFF;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2, h3, h4 {
+  font-family: 'Roboto';
+}
+p, li {
+  font-size: 16px;
+}
+a {
+  background-color: #F0FFFF;
+}
+a:link {
+  color: #0000FF;
+}
+a:visited {
+  color: #A80000;
+}
+a:hover, a:focus {
+  font-size: 20px;
+  background-color: #000000;
+  color: #FFFFFF;
+}
+a:active {
+  background-color: #A80000;
+}
+ul {
+    list-style-type: disc;
+}
+
+@media screen and (min-width: 480px) {
+    ul {
+        list-style-type: square;
+    }
+}
