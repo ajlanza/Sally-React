@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sally Student w/ React</title>
+</head>
+<body>
+  
+  <div id="application-root">
+  </div>
+
+<script
+  src="https://unpkg.com/react@16/umd/react.development.js">
+</script>
+<script
+  src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+</script>
+<script
+  src="https://unpkg.com/babel-standalone@6/babel.min.js">
+</script>
+<script type = 'text/babel'>
+  const appRoot = document.querySelector('#application-root');
+  function App() {
+  return (
+    <div>
+      <header><h1>Sally Student's Resume</h1></header>
+      <main>
+        <section>
+          <h2>Education</h2>
+          <ul>
+            <li>Graduated New York University in 2009</li>
+            <li>Graduated Smithtown High School in 2005</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Employment History</h2>
+          <h3>Pilot: 2000-2004</h3>
+          <h4>Southwest Airlines</h4>
+          <p>Job Description: <br /> 
+            Piloted Boeing 747, Boeing 767, and Boeing 777 aiplanes without crashing a single one.</p>
+          <h3>Store Manager: 2004-2006</h3>
+          <h4>Home Depot</h4>
+          <p>Job Description: <br />
+            Oversaw all aspects of running a store effectively including customer satisfaction, proper inventory levels, controlling loss due to multiple factors, and human resources.</p>
+        </section>
+      </main>
+      <footer>
+        <h2>Contact info for Sally Student</h2>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Abbi_Jacobson_and_Ilana_Glazer_at_Internet_Week_14_%28cropped%29.jpg/330px-Abbi_Jacobson_and_Ilana_Glazer_at_Internet_Week_14_%28cropped%29.jpg" alt="Picture of Ilana Glazer" />
+        <address>
+          <p>Email: <a href="mailto:sallystudent@broadcity.com">sallystudent@broadcity.com</a>
+            Phone: <a href="tel:(518)555-5555">(518)555-5555</a></p>
+        </address>
+      </footer>
+    </div>
+  );
+} ;
+
+
+ReactDOM.render(<App />, appRoot);
+ 
+</script>
+</body>
+</html>
